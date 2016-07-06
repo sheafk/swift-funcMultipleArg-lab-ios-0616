@@ -15,7 +15,12 @@
  */
 // write your code here
 
+func countriesInContinent(numOfCountries: Int, continent: String) {
+    
+    print("\(continent) is a continent which contains \(numOfCountries) countries.")
+}
 
+countriesInContinent(3, continent: "North America")
 
 
 /*: question2
@@ -25,17 +30,19 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting("Danny", "Hello")
+//greeting("Danny", "Hello")
 
-
+greeting("Danny", greeting: "Hello")
 
 
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
+func daysInMonth(month: String, days: Int) { //days should be an Int not a String. Or if it needs to be a string, the input below should be "30" as a String.
     print("There are \(days) in \(month)")
 }
+
+
 
 daysInMonth("November", days: 30)
 
@@ -48,8 +55,20 @@ daysInMonth("November", days: 30)
 // write your code here
 
 
+func bottlesOnTheWall (number: Int, beverage: String, wall: String) {
+    
+    print("\(number) bottles of \(beverage) on the \(wall) wall.")
+}
 
+//My solution using string literals
+bottlesOnTheWall(8, beverage: "coke", wall: "brick")
 
+//My solution using variables
+var number = 9
+var beverage = "Orange Juice"
+var wall = "cement"
+
+bottlesOnTheWall(number, beverage: beverage, wall: wall)
 /*:
  [Solution](solution)
  */
